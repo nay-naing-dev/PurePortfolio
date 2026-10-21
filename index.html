@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nay Naing | Full-Stack Developer in Training</title>
+    <meta name="description" content="Portfolio of Nay Naing, a second-year Computer Engineering and IT student building full-stack web apps with JavaScript.">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Loaded in <head> (not deferred) so the saved theme is applied before the page paints. -->
+    <script src="js/theme-init.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <!-- Link name is read as "Nay Naing, Active, open to work". -->
+            <a class="logo" href="#top">
+                <img src="assets/favicon.svg" alt="" width="32" height="32">
+                <span class="logo-text">
+                    <span class="logo-name">Nay Naiiiiii</span>
+                    <span class="logo-status">
+                        <span class="status-dot" aria-hidden="true"></span>
+                        <span>Active<span class="status-sep" aria-hidden="true"> · </span><span class="visually-hidden">, </span>Open to work</span>
+                    </span>
+                </span>
+            </a>
+
+            <nav class="site-nav" id="site-nav" aria-label="Main">
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-list">
+                    <span class="menu-icon" aria-hidden="true"></span>
+                    <span class="menu-toggle-text">Menu</span>
+                </button>
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="theme-toggle" type="button" aria-pressed="false">
+                <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                    <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="currentColor"/>
+                </svg>
+                <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                    <circle cx="12" cy="12" r="4.5" fill="currentColor"/>
+                    <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                        <path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/>
+                    </g>
+                </svg>
+                <span class="theme-toggle-text">Dark mode</span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- Hero -->
+        <section class="hero" id="top" aria-labelledby="hero-title">
+            <!-- Decorative background lettering; hidden from screen readers since the h1 already says it. -->
+            <span class="hero-watermark" aria-hidden="true">NAY</span>
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <h1 id="hero-title">Nay Naing//နေနိုင်</h1>
+                    <p class="hero-role">Full-Stack JavaScript Developer</p>
+                    <p class="hero-lead">
+                        When your work becomes your joy, never let go of the passion that fuels your soul.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#projects">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor">
+                                <path d="M3 3h8v8H3zM13 3h8v8h-8zM3 13h8v8H3zM13 13h8v8h-8z"/>
+                            </svg>
+                            View my projects
+                        </a>
+                        <a class="button button-secondary" href="#contact">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round">
+                                <path d="M3 5h18v14H3z"/><path d="m3 5 9 8 9-8"/>
+                            </svg>
+                            Get in touch
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-photo">
+                    <!-- Two versions of the same portrait; CSS shows the one that matches the theme. -->
+                    <img class="photo-light" src="assets/nay-naing-light.jpg"
+                         alt="Portrait of Nay Naing in a navy suit and blue tie, wearing glasses" width="896" height="1195">
+                    <img class="photo-dark" src="assets/nay-naing-dark.jpg"
+                         alt="Portrait of Nay Naing in a navy suit and blue tie, wearing glasses" width="896" height="1195">
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section" id="about" aria-labelledby="about-title">
+            <div class="container about-grid">
+                <div>
+                    <p class="eyebrow">About</p>
+                    <h2 id="about-title">A little about me</h2>
+                    <p>
+                        I'm 20 years old and studying Computer Engineering and Information Technology at
+                        Technological University, Kyaukse. JavaScript is my core language. I like working
+                        across the whole stack: shaping a clear interface, then wiring it to an API and a database.
+                    </p>
+                    <p>
+                        Outside class I help build our tech community with university seniors, and I'm
+                        preparing for hackathons and other competitive events. I'm also curious about
+                        AI-assisted coding workflows and generative video and media tools.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h3>Learning goals</h3>
+                    <ul class="check-list">
+                        <li>Land a software engineering or IT internship, ideally in banking and finance</li>
+                        <li>Grow from MERN projects to production-ready full-stack apps</li>
+                        <li>Get confident with TypeScript, Next.js and SQL databases</li>
+                        <li>Use AI-assisted tools well while understanding every line I ship</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section section-alt" id="skills" aria-labelledby="skills-title">
+            <div class="container">
+                <p class="eyebrow">Skills</p>
+                <h2 id="skills-title">What I work with</h2>
+                <p class="section-intro">
+                    Skills marked <span class="badge badge-learning">Learning</span> are shown in grey because
+                    I'm still practicing them. I can explain the rest and have used them in my own projects.
+                </p>
+
+                <!-- Icons are decorative (alt=""): the skill name next to each one is the real label. -->
+                <div class="skills-grid">
+                    <article class="skill-group">
+                        <h3>Frontend</h3>
+                        <ul class="skill-list">
+                            <li class="skill"><span class="skill-icon"><img src="assets/icons/html5.svg" alt="" width="24" height="24"></span>HTML5</li>
+                            <li class="skill"><span class="skill-icon"><img src="assets/icons/css3.svg" alt="" width="24" height="24"></span>CSS3</li>
+                            <li class="skill"><span class="skill-icon"><img src="assets/icons/javascript.svg" alt="" width="24" height="24"></span>JavaScript</li>
+                            <li class="skill"><span class="skill-icon"><img src="assets/icons/react.svg" alt="" width="24" height="24"></span>React.js (Vite)</li>
+                            <li class="skill"><span class="skill-icon"><img src="assets/icons/vuejs.svg" alt="" width="24" height="24"></span>Vue.js</li>
+                            <li class="skill"><span class="skill-icon"><img src="assets/icons/tailwindcss.svg" alt="" width="24" height="24"></span>Tailwind CSS</li>
+                            <li class="skill"><span class="skill-icon"><img src="assets/icons/gsap.svg" alt="" width="24" height="24"></span>GSAP animations</li>
+                            <li class="skill is-learning"><span class="skill-icon"><img src="assets/icons/nextjs.svg" alt="" width="24" height="24"></span>Next.js <span class="badge badge-learning">Learning</span></li>
+                            <li class="skill is-learning"><span class="skill-icon"><img src="assets/icons/typescript.svg" alt="" width="24" height="24"></span>TypeScript <span class="badge badge-learning">Learning</span></li>
+                            <li class="skill is-learning"><span class="skill-icon"><img src="assets/icons/threejs.svg" alt="" width="24" height="24"></span>Three.js <span class="badge badge-learning">Learning</span></li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-group">
+                        <h3>Backend &amp; databases</h3>
+                        <ul class="skill-list">
+                            <li class="skill"><span class="skill-icon"><img src="assets/icons/nodejs.svg" alt="" width="24" height="24"></span>Node.js</li>
+                            <li class="skill"><span class="skill-icon"><img src="assets/icons/express.svg" alt="" width="24" height="24"></span>Express.js</li>
+                            <li class="skill"><span class="skill-icon"><img src="assets/icons/api.svg" alt="" width="24" height="24"></span>REST APIs</li>
+                            <li class="skill"><span class="skill-icon"><img src="assets/icons/mongodb.svg" alt="" width="24" height="24"></span>MongoDB</li>
+                            <li class="skill"><span class="skill-icon"><img src="assets/icons/c.svg" alt="" width="24" height="24"></span>C</li>
+                            <li class="skill is-learning"><span class="skill-icon"><img src="assets/icons/dotnet.svg" alt="" width="24" height="24"></span>C# / .NET <span class="badge badge-learning">Learning</span></li>
+                            <li class="skill is-learning"><span class="skill-icon"><img src="assets/icons/postgresql.svg" alt="" width="24" height="24"></span>PostgreSQL / SQL <span class="badge badge-learning">Learning</span></li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-group">
+                        <h3>Cloud &amp; services</h3>
+                        <ul class="skill-list">
+                            <li class="skill"><span class="skill-icon"><img src="assets/icons/upload.svg" alt="" width="24" height="24"></span>Multer (file uploads)</li>
+                            <li class="skill"><span class="skill-icon"><img src="assets/icons/cloud-image.svg" alt="" width="24" height="24"></span>Cloudinary</li>
+                            <li class="skill"><span class="skill-icon"><img src="assets/icons/firebase.svg" alt="" width="24" height="24"></span>Firebase</li>
+                            <li class="skill"><span class="skill-icon"><img src="assets/icons/serverless.svg" alt="" width="24" height="24"></span>Serverless API functions</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-group">
+                        <h3>Workflow &amp; tools</h3>
+                        <ul class="skill-list">
+                            <li class="skill"><span class="skill-icon"><img src="assets/icons/git.svg" alt="" width="24" height="24"></span>Git</li>
+                            <li class="skill"><span class="skill-icon"><img src="assets/icons/github.svg" alt="" width="24" height="24"></span>GitHub</li>
+                            <li class="skill"><span class="skill-icon"><img src="assets/icons/vercel.svg" alt="" width="24" height="24"></span>Vercel deployment</li>
+                            <li class="skill"><span class="skill-icon"><img src="assets/icons/stack.svg" alt="" width="24" height="24"></span>MERN architecture</li>
+                            <li class="skill is-learning"><span class="skill-icon"><img src="assets/icons/ai.svg" alt="" width="24" height="24"></span>AI-assisted coding <span class="badge badge-learning">Learning</span></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects: cards and filter buttons are generated by js/main.js from the projects array. -->
+        <section class="section" id="projects" aria-labelledby="projects-title">
+            <div class="container">
+                <p class="eyebrow">Projects</p>
+                <h2 id="projects-title">Things I've built</h2>
+                <p class="section-intro">A mix of full-stack apps, frontend experiments and a game. Unfinished work is labeled.</p>
+
+                <div class="filter-bar" id="project-filters" role="group" aria-label="Filter projects by category"></div>
+                <p class="result-count" id="project-count" role="status" aria-live="polite"></p>
+
+                <div class="project-grid" id="project-grid">
+                    <noscript><p>Turn on JavaScript to see my project cards.</p></noscript>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section section-alt" id="contact" aria-labelledby="contact-title">
+            <div class="container contact-grid">
+                <div class="contact-info">
+                    <p class="eyebrow">Contact</p>
+                    <h2 id="contact-title">Let's talk</h2>
+                    <p>
+                        I'm open to internships, hackathon teams and community projects.
+                        The quickest way to reach me is email.
+                    </p>
+                    <a class="email-link" href="mailto:sunbeezpolo@gmail.com">sunbeezpolo@gmail.com</a>
+
+                    <h3 class="profiles-title">Find me online</h3>
+                    <ul class="profile-links">
+                        <li><a href="https://github.com/nay-naing-dev">GitHub</a></li>
+                        <!-- TODO: replace with your real LinkedIn URL. -->
+
+                        <li><a href="https://www.linkedin.com/in/your-username">LinkedIn</a></li>
+                    </ul>
+                </div>
+
+                <form class="contact-form" id="contact-form" novalidate>
+
+                    <div class="form-field">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" autocomplete="name" required minlength="2" aria-describedby="name-error">
+                        <p class="field-error" id="name-error"></p>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+                        <p class="field-error" id="email-error"></p>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required aria-describedby="message-hint message-count message-error"></textarea>
+                        <div class="field-meta">
+                            <p class="field-hint" id="message-hint">20 to 500 characters.</p>
+                            <p class="char-count" id="message-count">0 / 500</p>
+                        </div>
+                        <p class="field-error" id="message-error"></p>
+                    </div>
+
+                    <button class="button button-primary" type="submit">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square">
+                            <path d="M5 12h12M12 6l6 6-6 6"/>
+                        </svg>
+                        Submit message
+                    </button>
+                    <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Nay Naing. Built with HTML, CSS and vanilla JavaScript.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
