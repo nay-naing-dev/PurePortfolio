@@ -292,13 +292,18 @@ a:hover {
     line-height: 1.6;
     vertical-align: middle;
     white-space: nowrap;
+    clip-path: polygon(0.8rem 0, 100% 0, calc(100% - 1rem) 100%, 0 100%);
+}
+.yellow{
+    color: #ffd000;
+    -webkit-text-stroke: 1px #141312;
 }
 
 /* Neutral grey on purpose: still-learning skills should look quieter than finished ones. */
 .badge-learning {
     background: transparent;
     color: var(--text-muted);
-    border: 1px dashed var(--text-muted);
+    border: 2px dashed var(--text-muted);
 }
 
 .badge-category {
@@ -618,6 +623,25 @@ a:hover {
 }
 
 /* Giant gradient "NAY" behind the hero. Low opacity keeps the text above it readable. */
+.hero-watermarkk {
+    position: absolute;
+    z-index: -1;
+    left: 0.5em;
+    top: 0.3rem;
+    font-size: 750px;
+    font-family: var(--font-display);
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 0;
+    background: linear-gradient(100deg, #006857 0%, #00674d 55%, #006035 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    opacity: 0.13;
+    pointer-events: none;
+    user-select: none;
+    white-space: nowrap;
+}
 .hero-watermark {
     position: absolute;
     z-index: -1;
@@ -640,7 +664,29 @@ a:hover {
     opacity: 0.16;
 }
 
-/* On phones the photo sits at the bottom of the hero, so the lettering goes behind the name instead. */
+/* On page load the two "NAY" layers slide in from off-screen on opposite sides.
+   Runs even with reduced motion turned on, by choice: it plays once and is decorative. */
+.hero-watermark {
+    animation: watermark-from-left 1.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.hero-watermarkk {
+    animation: watermark-from-right 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+}
+
+@keyframes watermark-from-left {
+    from {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes watermark-from-right {
+    from {
+        transform: translateX(100vw);
+    }
+}
+
+/* On phones the lettering sits at the top of the hero, behind the photo. */
 @media (max-width: 59.99rem) {
     .hero-watermark {
         top: 0.5rem;
@@ -731,6 +777,13 @@ a:hover {
     /* Leaves 1rem for the offset frame so it never pushes past the page edge. */
     width: min(calc(100% - 1rem), 17rem);
     margin-inline: auto;
+}
+
+/* Single column: show the photo above the name. The HTML keeps the name first for screen readers. */
+@media (max-width: 59.99rem) {
+    .hero-photo {
+        order: -1;
+    }
 }
 
 @media (min-width: 60rem) {
@@ -1023,6 +1076,11 @@ a:hover {
         gap: 4rem;
         align-items: start;
     }
+}
+
+/* Browsers italicize <address> by default. */
+address {
+    font-style: normal;
 }
 
 .email-link {
