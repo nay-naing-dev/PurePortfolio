@@ -63,10 +63,11 @@
         <section class="hero" id="top" aria-labelledby="hero-title">
             <!-- Decorative background lettering; hidden from screen readers since the h1 already says it. -->
             <span class="hero-watermark" aria-hidden="true">NAY</span>
+            <span class="hero-watermarkk" aria-hidden="true">NAY</span>
             <div class="container hero-inner">
                 <div class="hero-text">
-                    <h1 id="hero-title">Nay Naing//နေနိုင်</h1>
-                    <p class="hero-role">Full-Stack JavaScript Developer</p>
+                    <h1 id="hero-title">Nay Naing || နေနိုင်</h1>
+                    <p class="hero-role">Full-Stack <span class="yellow">JavaScript </span>Developer</p>
                     <p class="hero-lead">
                         When your work becomes your joy, never let go of the passion that fuels your soul.
                     </p>
@@ -100,10 +101,9 @@
         <section class="section" id="about" aria-labelledby="about-title">
             <div class="container about-grid">
                 <div>
-                    <p class="eyebrow">About</p>
-                    <h2 id="about-title">A little about me</h2>
+                    <h2 id="about-title">A little about <span class="yellow"> naynaii</span></h2>
                     <p>
-                        I'm 20 years old and studying Computer Engineering and Information Technology at
+                        I'm 20 years old and studying Computer Engineering and Information Technology (II CEIT) at
                         Technological University, Kyaukse. JavaScript is my core language. I like working
                         across the whole stack: shaping a clear interface, then wiring it to an API and a database.
                     </p>
@@ -138,7 +138,7 @@
 
                 <!-- Icons are decorative (alt=""): the skill name next to each one is the real label. -->
                 <div class="skills-grid">
-                    <article class="skill-group">
+                    <section class="skill-group">
                         <h3>Frontend</h3>
                         <ul class="skill-list">
                             <li class="skill"><span class="skill-icon"><img src="assets/icons/html5.svg" alt="" width="24" height="24"></span>HTML5</li>
@@ -152,9 +152,9 @@
                             <li class="skill is-learning"><span class="skill-icon"><img src="assets/icons/typescript.svg" alt="" width="24" height="24"></span>TypeScript <span class="badge badge-learning">Learning</span></li>
                             <li class="skill is-learning"><span class="skill-icon"><img src="assets/icons/threejs.svg" alt="" width="24" height="24"></span>Three.js <span class="badge badge-learning">Learning</span></li>
                         </ul>
-                    </article>
+                    </section>
 
-                    <article class="skill-group">
+                    <section class="skill-group">
                         <h3>Backend &amp; databases</h3>
                         <ul class="skill-list">
                             <li class="skill"><span class="skill-icon"><img src="assets/icons/nodejs.svg" alt="" width="24" height="24"></span>Node.js</li>
@@ -165,9 +165,9 @@
                             <li class="skill is-learning"><span class="skill-icon"><img src="assets/icons/dotnet.svg" alt="" width="24" height="24"></span>C# / .NET <span class="badge badge-learning">Learning</span></li>
                             <li class="skill is-learning"><span class="skill-icon"><img src="assets/icons/postgresql.svg" alt="" width="24" height="24"></span>PostgreSQL / SQL <span class="badge badge-learning">Learning</span></li>
                         </ul>
-                    </article>
+                    </section>
 
-                    <article class="skill-group">
+                    <section class="skill-group">
                         <h3>Cloud &amp; services</h3>
                         <ul class="skill-list">
                             <li class="skill"><span class="skill-icon"><img src="assets/icons/upload.svg" alt="" width="24" height="24"></span>Multer (file uploads)</li>
@@ -175,9 +175,9 @@
                             <li class="skill"><span class="skill-icon"><img src="assets/icons/firebase.svg" alt="" width="24" height="24"></span>Firebase</li>
                             <li class="skill"><span class="skill-icon"><img src="assets/icons/serverless.svg" alt="" width="24" height="24"></span>Serverless API functions</li>
                         </ul>
-                    </article>
+                    </section>
 
-                    <article class="skill-group">
+                    <section class="skill-group">
                         <h3>Workflow &amp; tools</h3>
                         <ul class="skill-list">
                             <li class="skill"><span class="skill-icon"><img src="assets/icons/git.svg" alt="" width="24" height="24"></span>Git</li>
@@ -186,7 +186,7 @@
                             <li class="skill"><span class="skill-icon"><img src="assets/icons/stack.svg" alt="" width="24" height="24"></span>MERN architecture</li>
                             <li class="skill is-learning"><span class="skill-icon"><img src="assets/icons/ai.svg" alt="" width="24" height="24"></span>AI-assisted coding <span class="badge badge-learning">Learning</span></li>
                         </ul>
-                    </article>
+                    </section>
                 </div>
             </div>
         </section>
@@ -217,7 +217,9 @@
                         I'm open to internships, hackathon teams and community projects.
                         The quickest way to reach me is email.
                     </p>
-                    <a class="email-link" href="mailto:sunbeezpolo@gmail.com">sunbeezpolo@gmail.com</a>
+                    <address>
+                        <a class="email-link" href="mailto:sunbeezpolo@gmail.com">sunbeezpolo@gmail.com</a>
+                    </address>
 
                     <h3 class="profiles-title">Find me online</h3>
                     <ul class="profile-links">
@@ -228,7 +230,7 @@
                     </ul>
                 </div>
 
-                <form class="contact-form" id="contact-form" novalidate>
+                <form class="contact-form" id="contact-form" aria-label="Contact form" novalidate>
 
                     <div class="form-field">
                         <label for="name">Name</label>
